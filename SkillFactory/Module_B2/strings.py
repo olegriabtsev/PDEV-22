@@ -11,14 +11,17 @@ mystr = 'Hello World!'
 #print(mystr[:-2])
 #print(mystr[::-1])
 
-colors = 'red blue green'
-print(colors.split())
-
-path = '/home/user/documents/file.txt'
-print(path.split('/'))
-
-colors = 'red blue green'
+_str = 'Hello World!'
+print(_str.find('l'))
+print(_str.count('l'))
+print('---')
+print(_str.index(' '))
+print('.'.join(_str))
+# print('\n'.join(_str))
+print('---')
+colors = 'white yellow green blue'
+print(colors)
 colors_split = colors.split()
-
-colors_joined = 'and'.join(colors_split)
+print(colors_split)
+colors_joined = ' - '.join(colors_split)
 print(colors_joined)
