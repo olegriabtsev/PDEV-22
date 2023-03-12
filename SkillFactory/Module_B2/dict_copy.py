@@ -5,13 +5,16 @@ car_dict = {
     'color': 'red',
     'transmission': 'manual'
 }
+car_dict2 = car_dict
 print(car_dict)
+print(car_dict2)
 print('---')
-car_dict.pop('color')
+car_dict['brand'] = 'Chevrolet'
 print(car_dict)
+print(car_dict2)
 print('---')
-car_dict.popitem()
-print(car_dict)
+new_car_dict = car_dict.copy()
+print(new_car_dict)
 print('---')
-car_dict.clear()
-print(car_dict)
+my_dict = dict(car_dict)
+print(my_dict)
